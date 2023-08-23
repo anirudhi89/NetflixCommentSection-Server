@@ -1,0 +1,21 @@
+# type Query {
+#     getComments(message: String): Comment
+# }
+
+type Query {
+    getUsers(firstName: String): User
+}
+
+type Comment {
+    id: ID
+    message: String
+}
+
+type User {
+    id: ID
+    firstName: String
+    lastName: String
+    userEmail: String
+    userPassword: String
+    profilePictureURL: String
+}
